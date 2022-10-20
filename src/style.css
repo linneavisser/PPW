@@ -1,3 +1,139 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    font-family: degular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* plus minus */
+details > summary {
+    list-style-type: "+";
+  }
+
+  details[open] > summary {
+    list-style-type: "-";
+  }
+
+
+   /* OTF */
+   .otf{
+    font-family: orpheuspro, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-feature-settings: "salt";
+    color: #fcfcfc;
+    -webkit-text-stroke: 1.7px;
+    -webkit-text-stroke-color: #B70000;
+    z-index: 10;
+    font-size: 5rem;
+    line-height: 1;
+}
+ /* cursor */
+ body{
+  cursor: none;
+ }
+ #cursor {
+  background-color: black;
+  border-radius: 25px;
+  
+  height: 50px;
+  width: 50px;
+  
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  filter: invert(1);
+  mix-blend-mode: difference;
+ }
+
+/* tryou */
+/* ul > li > img {
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: transform 250ms, opacity 250ms;
+    pointer-events: none;
+    width: min(50vw, 800px);
+}
+ul > li:hover > img{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+ }
+
+ details + img {
+    opacity: 0;
+    transform: translate(-5%, -5%) scale(0.5);
+    transition: transform 250ms, opacity 250ms;
+    pointer-events: none;
+    width: min(50vw, 800px);
+ }
+ details:hover + img {
+    opacity: 1;
+    transform: translate(-5%, -5%) scale(1);
+ } */
+
+ /* IMAGES ON HOVER */
+
+ .collapsible + .hidden + img {
+    opacity: 0;
+    transform: translate(-5%, -5%) scale(0.5);
+    transition: transform 250ms, opacity 250ms;
+    pointer-events: none;
+    width: min(50vw, 800px);
+ }
+.collapsible:hover + .hidden+ img {
+    opacity: 1;
+    transform: translate(-5%, -5%) scale(1);
+ }
+.hidden:hover + img {
+    opacity: 1;
+    transform: translate(-5%, -5%) scale(1);
+ }
+
+
+/* FADE IN ANIMATION */
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  } 
+
+  /* fade left to right */
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+  /* MEDIA QUERIES */
+
+
+@media screen and (max-width: 500px) {
+  .mobileNoShow{
+    display: none;
+  }
+}
