@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linnea Visser</title>
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/jas1nff.css">
+  </head>
+  <body class="grid">
+    <header class="navBar fixed z-40 mobileNoShow">
+        <nav aria-label="site nav" class="px-6 pt-5 flex justify-between w-screen"><a href="index.html" class="font-bold text-4xl sm:text-5xl">lv</a>   
+          <ul class="navList flex flex-col gap-1 sm:text-lg ">
+          <li id="aboutNav"><a href="#about" class="flex flex-row-reverse gap-1">(01)<p class="uppercase">about</p></a></li>
+          <li><a href="#projects" class="flex flex-row-reverse gap-1" id="projNav">(02)<p class="uppercase">projects</p> </a></li>
+          <li><a href="#styling" class="flex flex-row-reverse gap-1" id="styleNav">(03)<p class="uppercase">styling</p></a></li>
+          <li><a href="#contact" class="flex flex-row-reverse gap-1" id="conNav">(04)<p class="uppercase">contact</p></a></li>
+        </ul></nav>
+    </header>
+<main>
+    <section class="bg-offWhite min-h-screen">
+        <img src="images/kraesslayout.webp" alt="image of kraess website" class="w-screen h-auto">
+        <div class="border-b mx-16 px-6 md:mx-16 py-16 flex flex-col md:flex-row justify-between text-lg">
+            <p class="uppercase">keywords:</p>
+        <div class="md:w-[50vw] flex justify-between">
+            <p>UI/UX Design</p>
+            <p>Content Creation & Strategy</p>
+            <p>Visual Identity</p>
+            <p>Web Development</p>
+        </div>
+    </div>
+        <div class="flex flex-col gap-10 self-end sm:flex-row pl-6 md:mx-16 py-16  justify-between">
+            <div><p class="uppercase text-xl">Summary:</p></div>
+            <div class="flex flex-col gap-6 text-3xl md:w-[50vw]">
+                <h1 class="uppercase border-b pb-6">Kræss</h1>
+                <p class="border-b pb-6">Kræss is an independent interior design store based in Copenhagen. As a group project we redesigned their website and created a SoMe strategy.</p>
+                <div class="flex gap-5 md:gap-8 pb-6">
+                    <a href="https://linneavisser.github.io/kraess-copy/"><svg width="20" height="20" viewBox="0 0 32 32" class="md:h-8 w-auto"><path  fill="currentColor" d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48Z"/><path fill="currentColor" d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0Z"/></svg></a>
+                    <a href="https://www.youtube.com/shorts/Z6R1p7szAvU"><svg width="20" height="20" viewBox="0 0 32 32" class="md:h-8 w-auto"><path  fill="currentColor" d="M21 26H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h17a2 2 0 0 1 2 2v4.06l5.42-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.58.81L23 19.94V24a2 2 0 0 1-2 2ZM4 8v16h17v-6a1 1 0 0 1 1.58-.81L28 21.06V10.94l-5.42 3.87A1 1 0 0 1 21 14V8Z"/></svg></a>
+                    <a href="https://www.youtube.com/shorts/BOAZmtUy80s"><svg width="20" height="20" viewBox="0 0 32 32" class="md:h-8 w-auto"><path  fill="currentColor" d="M21 26H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h17a2 2 0 0 1 2 2v4.06l5.42-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.58.81L23 19.94V24a2 2 0 0 1-2 2ZM4 8v16h17v-6a1 1 0 0 1 1.58-.81L28 21.06V10.94l-5.42 3.87A1 1 0 0 1 21 14V8Z"/></svg></a>
+                 </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer></footer>
+<div id="cursor"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+<script type="module" src="./main.js"></script>
+  </body>
+</html>
