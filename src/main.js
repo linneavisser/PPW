@@ -7,7 +7,7 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
+      var elementVisible = 120;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {
@@ -75,5 +75,48 @@ document.addEventListener('mousemove', e => {
 //     })
 // }
 
+// gsap text reveal
+
+// const textrev = gsap.timeline();
+const textrevH = gsap.timeline();
+
+            // textrev.from(".line span", 1.8, {
+            //     y: 200,
+            //     ease: "power4.out",
+            //     delay: 1,
+            //     skewY: 10,
+            //     stagger: {
+            //         amount: 0.8,
+            //     },
+            // });
+
+            textrevH.from(".line h1", 1.8, {
+              y: 200,
+              ease: "power4.out",
+              delay: 0.3,
+              skewY: 20,
+              stagger: {
+                  amount: 0.8,
+              },
+          });
+
+    
 
 
+          // let section = document.querySelectorAll('section');
+          // let menu = document.querySelectorAll('header nav li a');
+          // window.onscroll = () => {
+          //   section.forEach(i => {
+          //     let top = window.scrollY;
+          //     let offset = i.offsetTop - 150;
+          //     let height = i.offsetHeight;
+          //     let id = i.getAttribute('id');
+          //     if (top >= offset && top < offset + height) {
+          //       menu.forEach(link => {
+          //         link.classList.remove('active');
+          //         document.querySelector('header nav a[href*=' + id + ']')
+          //           .classList.add('active');
+          //       });
+          //     }
+          //   });
+          // };
