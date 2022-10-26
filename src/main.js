@@ -1,5 +1,6 @@
 import "./style.css";
-
+/* Import af Motion One bibliotek */
+import { animate, stagger, inView, scroll, timeline } from "motion"
 
 //  SCROLL IN OPACITY ANIMATION
 function reveal() {
@@ -77,46 +78,13 @@ document.addEventListener('mousemove', e => {
 
 // gsap text reveal
 
-// const textrev = gsap.timeline();
 const textrevH = gsap.timeline();
-
-            // textrev.from(".line span", 1.8, {
-            //     y: 200,
-            //     ease: "power4.out",
-            //     delay: 1,
-            //     skewY: 10,
-            //     stagger: {
-            //         amount: 0.8,
-            //     },
-            // });
-
-            textrevH.from(".line h1", 1.8, {
+            textrevH.from(".line h1", 1, {
               y: 200,
               ease: "power4.out",
               delay: 0.3,
               skewY: 20,
               stagger: {
-                  amount: 0.8,
+                  amount: 0.6,
               },
           });
-
-    
-
-
-          // let section = document.querySelectorAll('section');
-          // let menu = document.querySelectorAll('header nav li a');
-          // window.onscroll = () => {
-          //   section.forEach(i => {
-          //     let top = window.scrollY;
-          //     let offset = i.offsetTop - 150;
-          //     let height = i.offsetHeight;
-          //     let id = i.getAttribute('id');
-          //     if (top >= offset && top < offset + height) {
-          //       menu.forEach(link => {
-          //         link.classList.remove('active');
-          //         document.querySelector('header nav a[href*=' + id + ']')
-          //           .classList.add('active');
-          //       });
-          //     }
-          //   });
-          // };

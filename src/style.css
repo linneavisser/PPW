@@ -53,7 +53,8 @@ details > summary {
  .navBar{
   filter: invert(1);
   mix-blend-mode: difference;
-  z-index: 0;
+  -webkit-animation: 3.5s ease 0s normal forwards 1 fadein;
+  animation: 3.5s ease 0s normal forwards 1 fadein;
  }
 
 nav a.red,
@@ -63,14 +64,14 @@ nav a:hover {
 
 
 .wrapperHeading {
-  width: 100vw;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 .wrapperHeading > .line {
   width: 100%;
-  height: 6rem;
+  height: 4rem;
   position: relative;
   overflow: hidden;
 }
@@ -81,8 +82,8 @@ nav a:hover {
 }
 
 .l1 span { 
-  animation-delay: 2.2s;
-  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-duration: 1.3s;
   animation-name: wipe-up;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -132,23 +133,44 @@ ul > li:hover > img{
     transform: translate(-5%, -5%) scale(1);
  } */
 
- /* IMAGES ON HOVER */
+ /* NAV ON HOVER */
+ .navList > li > a > p {
+  opacity: 0;
+  transition: transform 450ms, opacity 450ms;
+  transform: scale(0.5);
+ }
+ .navList > li:hover > a > p {
+  opacity: 1;
+  transform:  scale(1);
+ }
 
- .collapsible + .hidden + img {
-    opacity: 0;
-    transform: translate(-5%, -5%) scale(0.5);
-    transition: transform 250ms, opacity 250ms;
-    pointer-events: none;
-    width: min(50vw, 800px);
- }
-.collapsible:hover + .hidden+ img {
-    opacity: 1;
-    transform: translate(-5%, -5%) scale(1);
- }
-.hidden:hover + img {
-    opacity: 1;
-    transform: translate(-5%, -5%) scale(1);
- }
+/* REDO PROJECT LIST DESKTOP */
+.projectList + img {
+  opacity: 0;
+  transform: translate(-5%, -5%) scale(0.5);
+  transition: transform 450ms, opacity 450ms;
+  pointer-events: none;
+  width: min(50vw, 800px);
+}
+.projectList:hover + img {
+  opacity: 1;
+  transform: translate(-5%, -5%) scale(1);
+}
+.projectList:hover img {
+  rotate: -25deg;
+  transition: 0.3s ease-in-out;
+}
+.projectList + img + p {
+opacity: 0;
+transform: translate(-5%, -5%) scale(0.5);
+transition: transform 450ms, opacity 450ms;
+pointer-events: none;
+width: min(50vw, 800px);
+}
+.projectList:hover + img + p {
+opacity: 1;
+transform: translate(-5%, -5%) scale(1);
+}
 
 
 /* FADE IN ANIMATION */
@@ -164,10 +186,11 @@ ul > li:hover > img{
     opacity: 1;
   } 
 
+  /* opacity animation */
 
   #scrollDown{
-    -webkit-animation: 4.5s ease 0s normal forwards 1 fadein;
-    animation: 4.5s ease 0s normal forwards 1 fadein;
+    -webkit-animation: 3.5s ease 0s normal forwards 1 fadein;
+    animation: 3.5s ease 0s normal forwards 1 fadein;
 }
 
 @keyframes fadein{
@@ -203,8 +226,6 @@ ul > li:hover > img{
 
 
 
-
-
   /* MEDIA QUERIES */
 
 
@@ -216,6 +237,9 @@ ul > li:hover > img{
 @media screen and (max-width: 928px) {
   #cursor{
     display: none;
+  }
+  body{
+    cursor: auto;
   }
 }
 
