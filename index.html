@@ -7,27 +7,43 @@
     <title>Linnea Visser</title>
     <!-- fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/jas1nff.css">
-    <script type="module" crossorigin src="./assets/main.3af52373.js"></script>
-    <link rel="stylesheet" href="./assets/index.43a43404.css">
+    <script type="module" crossorigin src="./assets/main.843861b9.js"></script>
+    <link rel="stylesheet" href="./assets/index.7dee18a5.css">
   </head>
   <body class="grid">
+    <header class="navBar fixed z-40 mobileNoShow">
+        <nav aria-label="site nav" class="px-6 pt-5 flex justify-between w-screen"><a href="index.html" class="font-bold text-4xl sm:text-5xl">lv</a>   
+          <ul class="navList flex flex-col gap-1 sm:text-lg ">
+          <li id="aboutNav"><a href="#about" class="flex flex-row-reverse gap-1">(01)<p class="uppercase">about</p></a></li>
+          <li><a href="#projects" class="flex flex-row-reverse gap-1" id="projNav">(02)<p class="uppercase">projects</p> </a></li>
+          <li><a href="#styling" class="flex flex-row-reverse gap-1" id="styleNav">(03)<p class="uppercase">styling</p></a></li>
+          <li><a href="#contact" class="flex flex-row-reverse gap-1" id="conNav">(04)<p class="uppercase">contact</p></a></li>
+        </ul></nav>
+    </header>
     <!-- LANDING SECTION -->
-    <section class="h-screen flex flex-col justify-around px-6 sm:px-16 sticky top-0 -z-10 bg-offWhite">
-      <div class="pt-[10vh] md:pt-[5vh] grid grid-rows-2">
-        <div class="col-span-5 row-start-1 col-start-1">
-           <h1 class=" uppercase font-semibold text-7xl sm:text-9xl tracking-widest">Linnea</h1>
+    <section class="h-screen flex flex-col justify-around px-8 sm:px-14 md:px-20 -z-10 bg-offWhite w-screen">
+
+      <div class="pt-[10vh] md:pt-[5vh] grid md:w-[35vw]">
+        <div class="wrapperHeading">
+          <div class="line grid sm:grid-cols-6 ">
+             <h1 class="uppercase font-semibold text-6xl md:text-9xl  tracking-wider col-start-1 row-start-1">Linnea </h1>
+          </div>
+          <div class="line grid sm:grid-cols-6">
+            <h1 class="uppercase font-semibold text-6xl md:text-9xl tracking-wider col-start-2 md:col-start-3 row-start-1">Visser </h1>
+         </div>
         </div>
-        <div class="otf sm:text-9xl rotate-3 tracking-tightest row-start-1 col-start-1 ml-4">I</div>
-        <div class="col-span-5 row-start-2 col-start-1 ml-10  sm:ml-0">
-       <h1 class="uppercase text-7xl font-semibold  tracking-wider sm:text-9xl">Visser</h1>
-        </div>
-        <div class="otf sm:text-9xl rotate-3  row-start-2 col-start-3  col-span-2  ml-5 sm:col-start-3 ">E</div>
       </div>
-    <p class= " text-myRed text-right font-medium uppercase text-xl w-[50vw] self-end">Digital designer with a strong interest in branding, identity and creative direction.</p>
-<img src="./assets/Vector.1bed14d3.svg" alt="arrow down" class="h-14 w-auto">
+          <div class=" text-offBlack text-right font-medium uppercase text-2xl sm:text-3xl w-[65vw] md:w-[40vw] md:leading-10 self-end">
+            <span class="l1">
+              <span>Digital design student with an interest in web design, branding, identity and Visual storytelling. </span>
+            </span>
+          </div>
+
+    <!-- <p class= " text-offBlack text-right font-medium uppercase text-2xl w-[65vw] self-end">Digital design student with a strong interest in branding, identity and creative direction.</p> -->
+<div class="flex gap-3 justify-end sm:justify-start" id="scrollDown"><p class="uppercase self-center text-myRed text-lg sm:text-2xl">scroll down</p><img src="./assets/downarrow.195b0312.svg" alt="arrow down" class="h-8 sm:h-10 w-auto"></div>
 </section>
 <!-- RED SECTION -->
-<section class=" bg-myRed h-screen sm:h-[120vh] px-6 sm:px-0 sm:grid sm:grid-cols-6 md:grid-cols-12 -z-10">
+<section class=" bg-myRed h-screen md:h-[110vh] px-6 sm:px-0 sm:grid sm:grid-cols-6 md:grid-cols-12 -z-10">
   <div class="flex flex-col gap-3 sm:gap-6 text-offWhite text-3xl pt-[35vh] uppercase sm:col-start-2 col-span-4 reveal">
     <div class="flex justify-between pb-3 sm:pb-6 border-b">(01) <span>About me</span></div>
     <div class="flex justify-between pb-3 sm:pb-6 border-b"><div>(02) </div><div>Projects</div></div>
@@ -36,10 +52,10 @@
   </div>
 </section>
 <!-- ABOUT SECTION -->
-<section class=" min-h-screen bg-offWhite pt-16 pl-6 sm:pl-0 sm:hidden" >
+<section class="min-h-screen bg-offWhite pt-16 pl-6 sm:pl-0 sm:hidden" >
 <div class="grid grid-cols-6 sm:grid-cols-12">
     <img src="./assets/linkedin-bw.dce8ce10.webp" alt="black and white picture of me" class="opacity-90 col-start-4 col-span-4 row-start-1 sm:col-start-8">
-   <h2 class="reveal z-10 text-7xl  font-semibold tracking-wide col-start-1 col-span-4 row-start-1 self-end">About Me</h2>
+   <h2 class="reveal z-10 text-7xl  font-semibold tracking-wide col-start-1 col-span-4 row-start-1 self-end uppercase">About Me</h2>
 </div>
    <div class="reveal text-xl pt-8 pr-6 leading-8">
     <p>I'm a multimedia design student currently based in Copenhagen.</p>
@@ -48,7 +64,7 @@
    </div>
 </section>
 <!-- ABOUT SECTION DESKTOP -->
-<section class="mobileNoShow min-h-screen bg-offWhite pt-56 pb-24 " >
+<section class="mobileNoShow min-h-screen bg-offWhite pt-56 pb-24 " id="about">
   <div class="grid grid-cols-12">
       <img src="./assets/linkedin-bw.dce8ce10.webp" alt="black and white picture of me" class="reveal opacity-90 col-start-9 col-span-3 row-start-1 mt-8">
       <div class="reveal  pr-6 col-start-2 col-span-7 row-start-1">
@@ -63,7 +79,81 @@
   </section>
 <!-- PROJECTS SECTION  MOBILE OBSBOSOBSOBSBOSOB-->
 <section class=" bg-offWhite px-6 min-h-screen sm:hidden">
-  <h2 class=" text-7xl  font-semibold tracking-wide pt-16 reveal">Selected Projects</h2>
+  <h2 class=" text-7xl  font-semibold tracking-wide pt-16 reveal uppercase">Selected Projects</h2>
+  <div class="pt-16 reveal">
+    <details class="border-b border-offBlack">
+      <summary class=" text-3xl uppercase pb-4"><span class="pl-4">Vildskud </span></summary>
+      <img src="./assets/kraesslayout.264b6786.webp" alt="screenshot from our solution" class="border-t py-4">
+      <p class=" text-xl leading-8">Vildskud Festival is an annual independent theater festival in Copenhagen. They tasked us to create a mobile first, sustainable website - each page had a maximum size of 0.125 mb. We had two weeks to design and develop our solution, and worked in a group of three. <br> My focus areas were to develop their new visual identity and collaborate on desiging the UI, design events posters and assist with the web development.</p>
+      <div class="flex gap-5 py-4">
+        <a href="https://thordiskara.com/vildskud/"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48Z"/><path fill="currentColor" d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0Z"/></svg></a>
+     </div>
+    </details>
+    <details class="border-b border-offBlack">
+      <summary class=" text-3xl uppercase py-4"><span class="pl-4">Kræss</span></summary>
+      <img src="./assets/kraesslayout.264b6786.webp" alt="screenshot from our solution" class="border-t py-4">
+      <p class=" text-xl leading-8">Kræss is an independent interior design store based in Copenhagen. As a group project we redesigned their website and created a SoMe strategy. <br> My focus areas were to redesign their visual identity, develop our digital solution and do the post production of video content for SoMe channels.</p>
+      <div class="flex gap-5 py-4">
+        <a href="https://www.youtube.com/shorts/Z6R1p7szAvU"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M21 26H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h17a2 2 0 0 1 2 2v4.06l5.42-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.58.81L23 19.94V24a2 2 0 0 1-2 2ZM4 8v16h17v-6a1 1 0 0 1 1.58-.81L28 21.06V10.94l-5.42 3.87A1 1 0 0 1 21 14V8Z"/></svg></a>
+        <a href="https://www.youtube.com/shorts/BOAZmtUy80s"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M21 26H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h17a2 2 0 0 1 2 2v4.06l5.42-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.58.81L23 19.94V24a2 2 0 0 1-2 2ZM4 8v16h17v-6a1 1 0 0 1 1.58-.81L28 21.06V10.94l-5.42 3.87A1 1 0 0 1 21 14V8Z"/></svg></a>
+        <a href="https://linneavisser.github.io/kraess-copy/"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48Z"/><path fill="currentColor" d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0Z"/></svg></a>
+     </div>
+    </details>
+    <details class="border-b border-offBlack">
+      <summary class=" text-3xl uppercase py-4"><span class="pl-4">Costumiseme</span></summary>
+      <img src="./assets/kraesslayout.264b6786.webp" alt="screenshot from our solution" class="border-t py-4">
+      <p class=" text-xl leading-8">CustomiseMe sells customisable, vegan handsoaps. As a short group project we were tasked to redesign their website to make it more engaging. <br> My focus area were to design the UI, create a database, product photography and web development.</p>
+      <div class="flex gap-5 py-4">
+        <a href="https://linneavisser.github.io/CustomiseMe/"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48Z"/><path fill="currentColor" d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0Z"/></svg></a>
+     </div>
+    </details>
+    <details class="border-b border-offBlack">
+      <summary class=" text-3xl uppercase py-4"><span class="pl-4">portfolio</span></summary>
+      <img src="./assets/kraesslayout.264b6786.webp" alt="screenshot from our solution" class="border-t py-4">
+      <p class=" text-xl leading-8">As a part of my first semester exam I created a portfolio website, highlighting the projects I've done and skills I'd acquired.</p>
+      <div class="flex gap-5 py-4">
+        <a href="https://linneavisser.github.io/portfolio/index.html"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48Z"/><path fill="currentColor" d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0Z"/></svg></a>
+     </div>
+    </details>
+  </div>
+</section>
+<!-- PROJECTS DESKTOP OOSIBOSOBSOBSBOS -->
+<section class="mobileNoShow bg-offWhite min-h-screen  py-56" id="projects">
+  <h2 class="px-24 pb-24 reveal z-10 font-semibold tracking-wide text-8xl text-right uppercase">Selected Projects</h2>
+<div class="collWork grid  grid-cols-12 reveal">
+  <a href="kraess.html" class="projectList col-start-8 col-span-4 border-b py-6 flex justify-between hover:font-medium items-center">
+    <h3 class="uppercase  text-3xl"> Kræss</h3>
+    <img src="./assets/arrow-left.b75d8772.svg" alt="" class="h-7">
+  </a>
+    <img src="./assets/kraesslayout.264b6786.webp" alt="" class="col-start-1 col-span-7 ml-24 row-start-1 row-span-6">
+    <p class="col-start-1 col-span-7 ml-24 row-start-5 row-span-5">Kræss is an independent interior design store based in Copenhagen. As a group project we redesigned their website and created a SoMe strategy.
+     <br> My focus areas were to redesign their visual identity, develop our digital solution and do the post production of video content for SoMe channels.</p>
+    <div class="projectList col-start-8 col-span-4 border-b py-6 flex justify-between hover:font-medium items-center">
+      <h3 class="uppercase  text-3xl"> Kræss</h3>
+      <img src="./assets/arrow-left.b75d8772.svg" alt="" class="h-7">
+    </div>
+      <img src="./assets/kraesslayout.264b6786.webp" alt="" class="col-start-1 col-span-7 ml-24 row-start-1 row-span-6">
+      <p class="col-start-1 col-span-7 ml-24 row-start-5 row-span-5">Kræss is an independent interior design store based in Copenhagen. As a group project we redesigned their website and created a SoMe strategy.
+       <br> My focus areas were to redesign their visual identity, develop our digital solution and do the post production of video content for SoMe channels.</p>
+     <div class="projectList col-start-8 col-span-4 border-b py-6 flex justify-between hover:font-medium items-center">
+      <h3 class="uppercase  text-3xl"> Kræss</h3>
+      <img src="./assets/arrow-left.b75d8772.svg" alt="" class="h-7">
+    </div>
+      <img src="./assets/kraesslayout.264b6786.webp" alt="" class="col-start-1 col-span-7 ml-24 row-start-1 row-span-6">
+      <p class="col-start-1 col-span-7 ml-24 row-start-5 row-span-5">Kræss is an independent interior design store based in Copenhagen. As a group project we redesigned their website and create a SoMe strategy.
+       <br> My focus areas were to redesign their visual identity, develop our digital solution and do the post production of video content for SoMe channels.</p>
+       <div class="projectList col-start-8 col-span-4 border-b py-6 flex justify-between hover:font-medium items-center">
+        <h3 class="uppercase  text-3xl"> Kræss</h3>
+        <img src="./assets/arrow-left.b75d8772.svg" alt="" class="h-7">
+      </div>
+        <img src="./assets/kraesslayout.264b6786.webp" alt="" class="col-start-1 col-span-7 ml-24 row-start-1 row-span-6">
+        <p class="col-start-1 col-span-7 ml-24 row-start-5 row-span-5">Kræss is an independent interior design store based in Copenhagen. As a group project we redesigned their website and create a SoMe strategy.
+         <br> My focus areas were to redesign their visual identity, develop our digital solution and do the post production of video content for SoMe channels.</p>
+  </div>
+</section>
+<!-- STYLING  MOBILE OBSBOSOBSOBSBOSOB-->
+<section class="bg-offBlack min-h-screen px-6 text-offWhite sm:hidden">
+  <h2 class=" text-7xl  font-semibold tracking-wide pt-16 reveal uppercase">Selected Projects</h2>
   <div class="pt-16 reveal">
     <details class="border-b border-offBlack">
       <summary class=" text-3xl uppercase pb-4"><span class="pl-4">Vildskud </span></summary>
@@ -101,121 +191,41 @@
     </details>
   </div>
 </section>
-<!-- PROJECTS DESKTOP OOSIBOSOBSOBSBOS -->
-<section class="mobileNoShow bg-offWhite min-h-screen  py-56">
-  <h2 class="px-24 pb-28 reveal z-10 font-semibold tracking-wide text-8xl self-start text-right uppercase">Selected Projects</h2>
-<!-- <div>
-
-  <ul id="ul" class="flex flex-col gap-5">
-    <li class="relative hover:font-semibold" >
-      <span class="relative z-10 uppercase text-3xl"> vildskud</span>
-      <img src="images/kraesslayout.webp" alt="">
-    </li>
-      <div class="bg-offBlack h-[1px] w-[30vw]"></div>
-    <li class="relative">
-      <span class="relative z-10 uppercase text-3xl"> vildskud</span>
-      <img src="images/kraesslayout.webp" alt=""></li>
-      <div class="bg-offBlack h-[1px] w-[30vw]"></div>
-    <li class="relative">
-      <span class="relative z-10 uppercase text-3xl"> vildskud</span>
-      <img src="images/kraesslayout.webp" alt="" ></li>
-      <div class="bg-offBlack h-[1px] w-[30vw]"></div>
-    <li class="relative">
-      <span class="relative z-10 uppercase text-3xl"> vildskud</span>
-      <img src="images/kraesslayout.webp" alt="" ></li>
-      <div class="bg-offBlack h-[1px] w-[30vw]"></div>
-  </ul>
-
-</div> -->
-<!-- <div class="grid grid-cols-10">
-<details class="border-b py-6 col-span-3 col-start-1">
-  <summary class="uppercase text-3xl">Vildskud</summary>
-  <p class="border-t py-6">Vildskud Festival is an annual independent theater festival in Copenhagen. They tasked us to create a mobile first, sustainable website - each page had a maximum size of 0.125 mb. We had two weeks to design and develop our solution, and worked in a group of three. <br> My focus areas were to develop their new visual identity and collaborate on desiging the UI, design events posters and assist with the web development.</p>
-</details>
-<img src="images/kraesslayout.webp" alt="" class="col-start-5 col-span-6 row-start-1 row-span-6">
-<details class="border-b py-6 col-span-3 col-start-1">
-  <summary class="uppercase text-3xl">Vildskud</summary>
-  <p class="border-t py-6">Vildskud Festival is an annual independent theater festival in Copenhagen. They tasked us to create a mobile first, sustainable website - each page had a maximum size of 0.125 mb. We had two weeks to design and develop our solution, and worked in a group of three. <br> My focus areas were to develop their new visual identity and collaborate on desiging the UI, design events posters and assist with the web development.</p>
-</details>
-<img src="images/kraesslayout.webp" alt="" class="col-start-5 col-span-6 row-start-1 row-span-6">
-<details class="border-b py-6 col-span-3 col-start-1">
-  <summary class="uppercase text-3xl">Vildskud</summary>
-  <p class="border-t py-6">Vildskud Festival is an annual independent theater festival in Copenhagen. They tasked us to create a mobile first, sustainable website - each page had a maximum size of 0.125 mb. We had two weeks to design and develop our solution, and worked in a group of three. <br> My focus areas were to develop their new visual identity and collaborate on desiging the UI, design events posters and assist with the web development.</p>
-</details>
-<img src="images/kraesslayout.webp" alt="" class="col-start-5 col-span-6 row-start-2 row-span-6">
-<details class="border-b py-6 col-span-3 col-start-1">
-  <summary class="uppercase text-3xl">Vildskud</summary>
-  <p class="border-t py-6">Vildskud Festival is an annual independent theater festival in Copenhagen. They tasked us to create a mobile first, sustainable website - each page had a maximum size of 0.125 mb. We had two weeks to design and develop our solution, and worked in a group of three. <br> My focus areas were to develop their new visual identity and collaborate on desiging the UI, design events posters and assist with the web development.</p>
-</details>
-<img src="images/kraesslayout.webp" alt="" class="col-start-5 col-span-6 row-start-3 row-span-6">
-</div> -->
-<div class="collWork grid  grid-cols-12 reveal">
-  <div class="collapsible col-start-8 col-span-4 border-b py-6  flex justify-between hover:font-medium items-center">
-    <h3 class="uppercase text-3xl"> Kræss</h3>
-    <img src="./assets/plus.1b594621.svg" alt="" class="h-7">
-  </div>
-  <div class="hidden col-start-8 col-span-4 py-6 text-lg">
-          <p>Kræss is an independent interior design store based in Copenhagen. As a group project we redesigned their website and create a SoMe strategy. <br> My focus areas were to redesign their visual identity, web development, SoMe strategy and do the post production of video content for SoMe channels.
-          </p>
-         <div class="flex gap-8 pt-16">
-            <a href="https://www.youtube.com/shorts/Z6R1p7szAvU"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M21 26H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h17a2 2 0 0 1 2 2v4.06l5.42-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.58.81L23 19.94V24a2 2 0 0 1-2 2ZM4 8v16h17v-6a1 1 0 0 1 1.58-.81L28 21.06V10.94l-5.42 3.87A1 1 0 0 1 21 14V8Z"/></svg></a>
-            <a href="https://www.youtube.com/shorts/BOAZmtUy80s"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M21 26H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h17a2 2 0 0 1 2 2v4.06l5.42-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.58.81L23 19.94V24a2 2 0 0 1-2 2ZM4 8v16h17v-6a1 1 0 0 1 1.58-.81L28 21.06V10.94l-5.42 3.87A1 1 0 0 1 21 14V8Z"/></svg></a>
-            <a href="https://linneavisser.github.io/kraess-copy/"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48Z"/><path fill="currentColor" d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0Z"/></svg></a>
-         </div>
+ <!-- STYLING DESKTOP -->
+ <section class="mobileNoShow py-56 bg-offBlack min-h-screen  text-offWhite" id="styling">
+  <h2 class="px-24 pb-24 reveal z-10 font-semibold tracking-wide text-8xl self-start uppercase">Styling</h2>
+  <div class="collWork grid  grid-cols-12 reveal">
+    <div class="projectList col-start-2 col-span-4 border-b py-6 flex justify-between hover:font-medium items-center">
+      <h3 class="uppercase  text-3xl">Styleby</h3>
+      <img src="./assets/arrow-white.e410ee10.svg" alt="" class="h-7">
     </div>
-    <img src="./assets/kraesslayout.264b6786.webp" alt="" class="projImg col-start-1 col-span-7 ml-24 row-start-1 row-span-6">
-    <div class="collapsible col-start-8 col-span-4 border-b py-6 flex justify-between hover:font-medium items-center">
-      <h3 class="uppercase  text-3xl"> Kræss</h3>
-      <img src="./assets/plus.1b594621.svg" alt="" class="h-7">
-    </div>
-    <div class="hidden col-start-8 col-span-4 py-6">
-            <p>Kræss is an independent interior design store based in Copenhagen. As a group project we redesigned their website and create a SoMe strategy. <br> My focus areas were to redesign their visual identity, develop our digital solution and do the post production of video content for SoMe channels.
-            </p>
-           <div class="flex gap-5">
-              <a href="https://www.youtube.com/shorts/Z6R1p7szAvU"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M21 26H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h17a2 2 0 0 1 2 2v4.06l5.42-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.58.81L23 19.94V24a2 2 0 0 1-2 2ZM4 8v16h17v-6a1 1 0 0 1 1.58-.81L28 21.06V10.94l-5.42 3.87A1 1 0 0 1 21 14V8Z"/></svg></a>
-              <a href="https://www.youtube.com/shorts/BOAZmtUy80s"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M21 26H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h17a2 2 0 0 1 2 2v4.06l5.42-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.58.81L23 19.94V24a2 2 0 0 1-2 2ZM4 8v16h17v-6a1 1 0 0 1 1.58-.81L28 21.06V10.94l-5.42 3.87A1 1 0 0 1 21 14V8Z"/></svg></a>
-              <a href="https://linneavisser.github.io/kraess-copy/"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48Z"/><path fill="currentColor" d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0Z"/></svg></a>
-           </div>
+      <img src="./assets/smilla-styleby.15b4cc19.webp" alt="" class="col-start-6 col-span-7 ml-24 row-start-1 row-span-6 ">
+      <div class="projectList col-start-2 col-span-4 border-b py-6 flex justify-between hover:font-medium items-center">
+        <h3 class="uppercase  text-3xl">Vogue scandinavia</h3>
+        <img src="./assets/arrow-white.e410ee10.svg" alt="" class="h-7">
       </div>
-      <img src="./assets/kraesslayout.264b6786.webp" alt="" class="col-start-1 col-span-7 ml-24 row-start-1 row-span-6">
-      <div class="collapsible col-start-8 col-span-4 border-b py-6 flex justify-between hover:font-medium items-center">
-        <h3 class="uppercase  text-3xl"> Kræss</h3>
-        <img src="./assets/plus.1b594621.svg" alt="" class="h-7">
-      </div>
-      <div class="hidden col-start-8 col-span-4 py-6">
-              <p>Kræss is an independent interior design store based in Copenhagen. As a group project we redesigned their website and create a SoMe strategy. <br> My focus areas were to redesign their visual identity, develop our digital solution and do the post production of video content for SoMe channels.
-              </p>
-             <div class="flex gap-5">
-                <a href="https://www.youtube.com/shorts/Z6R1p7szAvU"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M21 26H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h17a2 2 0 0 1 2 2v4.06l5.42-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.58.81L23 19.94V24a2 2 0 0 1-2 2ZM4 8v16h17v-6a1 1 0 0 1 1.58-.81L28 21.06V10.94l-5.42 3.87A1 1 0 0 1 21 14V8Z"/></svg></a>
-                <a href="https://www.youtube.com/shorts/BOAZmtUy80s"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M21 26H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h17a2 2 0 0 1 2 2v4.06l5.42-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.58.81L23 19.94V24a2 2 0 0 1-2 2ZM4 8v16h17v-6a1 1 0 0 1 1.58-.81L28 21.06V10.94l-5.42 3.87A1 1 0 0 1 21 14V8Z"/></svg></a>
-                <a href="https://linneavisser.github.io/kraess-copy/"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48Z"/><path fill="currentColor" d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0Z"/></svg></a>
-             </div>
+        <img src="./assets/vogue-1.f80c34af.webp" alt="" class="col-start-6 col-span-7 ml-24 row-start-1 row-span-6">
+        <div class="projectList col-start-2 col-span-4 border-b py-6 flex justify-between hover:font-medium items-center">
+          <h3 class="uppercase  text-3xl">eurowoman</h3>
+          <img src="./assets/arrow-white.e410ee10.svg" alt="" class="h-7">
         </div>
-        <img src="./assets/kraesslayout.264b6786.webp" alt="" class="col-start-1 col-span-7 ml-24 row-start-1 row-span-6">
-        <div class="collapsible col-start-8 col-span-4 border-b py-6 flex justify-between hover:font-medium items-center">
-          <h3 class="uppercase  text-3xl"> Kræss</h3>
-          <img src="./assets/plus.1b594621.svg" alt="" class="h-7">
-        </div>
-        <div class="hidden col-start-8 col-span-4 py-6">
-                <p>Kræss is an independent interior design store based in Copenhagen. As a group project we redesigned their website and create a SoMe strategy. <br> My focus areas were to redesign their visual identity, develop our digital solution and do the post production of video content for SoMe channels.
-                </p>
-               <div class="flex gap-5">
-                  <a href="https://www.youtube.com/shorts/Z6R1p7szAvU"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M21 26H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h17a2 2 0 0 1 2 2v4.06l5.42-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.58.81L23 19.94V24a2 2 0 0 1-2 2ZM4 8v16h17v-6a1 1 0 0 1 1.58-.81L28 21.06V10.94l-5.42 3.87A1 1 0 0 1 21 14V8Z"/></svg></a>
-                  <a href="https://www.youtube.com/shorts/BOAZmtUy80s"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M21 26H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h17a2 2 0 0 1 2 2v4.06l5.42-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.58.81L23 19.94V24a2 2 0 0 1-2 2ZM4 8v16h17v-6a1 1 0 0 1 1.58-.81L28 21.06V10.94l-5.42 3.87A1 1 0 0 1 21 14V8Z"/></svg></a>
-                  <a href="https://linneavisser.github.io/kraess-copy/"><svg width="20" height="20" viewBox="0 0 32 32"><path  fill="currentColor" d="M29.25 6.76a6 6 0 0 0-8.5 0l1.42 1.42a4 4 0 1 1 5.67 5.67l-8 8a4 4 0 1 1-5.67-5.66l1.41-1.42l-1.41-1.42l-1.42 1.42a6 6 0 0 0 0 8.5A6 6 0 0 0 17 25a6 6 0 0 0 4.27-1.76l8-8a6 6 0 0 0-.02-8.48Z"/><path fill="currentColor" d="M4.19 24.82a4 4 0 0 1 0-5.67l8-8a4 4 0 0 1 5.67 0A3.94 3.94 0 0 1 19 14a4 4 0 0 1-1.17 2.85L15.71 19l1.42 1.42l2.12-2.12a6 6 0 0 0-8.51-8.51l-8 8a6 6 0 0 0 0 8.51A6 6 0 0 0 7 28a6.07 6.07 0 0 0 4.28-1.76l-1.42-1.42a4 4 0 0 1-5.67 0Z"/></svg></a>
-               </div>
+          <img src="./assets/eurowoman-isabelle.bf028c8a.webp" alt="" class="col-start-6 col-span-7 ml-24 row-start-1 row-span-6">
+          <div class="projectList col-start-2 col-span-4 border-b py-6 flex justify-between hover:font-medium items-center">
+            <h3 class="uppercase  text-3xl">børsen pleasure</h3>
+            <img src="./assets/arrow-white.e410ee10.svg" alt="" class="h-7">
           </div>
-          <img src="./assets/kraesslayout.264b6786.webp" alt="" class="col-start-1 col-span-7 ml-24 row-start-1 row-span-6">
-  </div>
-</section>
- <!-- STYLING -->
- <section class="bg-offBlack min-h-screen px-6 text-offWhite">
-  <h2 class="reveal text-7xl  font-semibold tracking-wide pt-16 text-right">Styling</h2>
+            <img src="./assets/borsen-pleasure1.6d08aea4.webp" alt="" class="col-start-6 col-span-7 ml-24 row-start-1 row-span-6">
+                 
+        
+    </div>
  </section>
 
-
+ <section class="bg-offWhite min-h-screen px-6" id="contact">
+  <h2 class="reveal text-7xl  font-semibold tracking-wide pt-16 uppercase">Contact</h2>
+ </section>
 <footer></footer>
 <div id="cursor"></div>
-    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+
   </body>
 </html>
