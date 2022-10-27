@@ -224,9 +224,45 @@ transform: translate(-5%, -5%) scale(1);
     }
   }
 
+/* responsive images */
+.column {
+  flex: 20%;
+  padding: 0 4px;
+}
+.column1 {
+  flex: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
 
 
   /* MEDIA QUERIES */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 
 
 @media screen and (max-width: 500px) {
