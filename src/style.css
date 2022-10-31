@@ -38,6 +38,7 @@ details > summary {
  body{
   cursor: none;
  }
+ 
  #cursor {
   background-color: black;
   border-radius: 25px;
@@ -171,6 +172,17 @@ width: min(50vw, 800px);
 opacity: 1;
 transform: translate(-5%, -5%) scale(1);
 }
+.projectList + img + div {
+  opacity: 0;
+  transform: translate(-5%, -5%) scale(0.5);
+  transition: transform 450ms, opacity 450ms;
+  pointer-events: none;
+  width: min(50vw, 800px);
+  }
+  .projectList:hover + img + div {
+  opacity: 1;
+  transform: translate(-5%, -5%) scale(1);
+  }
 
 
 /* FADE IN ANIMATION */
