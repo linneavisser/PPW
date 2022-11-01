@@ -11,11 +11,11 @@ body{
     font-weight: 400;
     font-style: normal;
 }
-.neue{
+/* .neue{
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 500;
   font-style: normal;
-}
+} */
 /* plus minus */
 details > summary {
     list-style-type: "+";
